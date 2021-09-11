@@ -1,0 +1,34 @@
+$primary1: rgb(232, 53, 86);
+$primary2: rgb(97, 208, 212);
+$primary3:rgb(209, 201, 38);
+$background: #EAE5E5;
+$secondaryColor:rgb(139, 139, 139);
+$secondaryColor1:rgb(77, 77, 77);
+$fontSize1:18px;
+$fontSize2:14px;
+$fontSize3:13.5px;
+$upperPadding:40px;
+$lowerPadding:40px;
+$footerHeight:120px;
+@mixin circularBox($radius,$height,$width) {
+    border-radius:$radius;
+    height: $height;
+    width:$width;
+  }
+  @mixin aspect-ratio( $width, $height) {
+    position: relative;
+    &:before{
+        display: block;
+        content: " ";
+       
+        padding-top: ($height / $width) * 100%;
+    }
+
+    > .content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+} 

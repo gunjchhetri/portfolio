@@ -1,0 +1,98 @@
+@import 'variables';
+.circular-image
+ {
+     @include circularBox(50%,370px,370px);
+ }
+ .about-me>
+ {
+     div
+     {
+    &:nth-child(1)
+     {
+        font-weight: bold;
+        
+     }
+    
+     &:nth-child(2)
+     {
+        font-weight: 400;
+        font-size:46px;
+     }
+     &:nth-child(3)
+     {
+        display: flex;
+         margin:20px 10px;
+       
+         justify-content: space-between;
+       .menu-item
+       {
+        @include aspect-ratio(1, 1);
+        width: 32%;;
+        border-radius: 50%;
+      
+        color: white;
+        
+           
+           
+       
+       &:nth-child(1)
+       {
+         background-color:$primary1;
+       }
+       &:nth-child(2)
+       {
+         background-color:$primary2;
+       }
+       &:nth-child(3)
+       {
+         background-color:$primary3;
+       }
+       div
+       {
+         display: flex;
+         text-transform: uppercase;
+         cursor: pointer;
+         align-items: center;
+         justify-content: center;
+       }
+      }
+     }
+     &:nth-child(4)
+     {
+        
+        font-size:13.5px;
+        font-family: 'Open Sans', sans-serif
+        Arial,Helvetica,sans-serif !important;
+     }
+    }
+     
+ } 
+
+
+ @media (max-width:961px) 
+{ 
+    .circular-image
+    {
+        @include circularBox(50%,100%,100%);
+    }
+   .round-menu{
+     margin:10px 0px !important;
+     margin-bottom: 30px !important;
+   }
+   .about-me>
+   {
+       div
+       {
+      
+       &:nth-child(2)
+       {
+           
+          font-size:42px;
+          margin-bottom: 20px;
+       }
+      }
+    }
+   .about-me{
+     padding: 10px;
+   }
+}

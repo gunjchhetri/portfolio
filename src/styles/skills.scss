@@ -1,0 +1,93 @@
+@import 'variables';
+ 
+.label-icon
+{
+     
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: $primary1;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 17px;
+}
+.experience-header{
+    padding-top: 20px;
+    span{
+        font-size: 16px;
+        
+    }
+}
+.skills-item
+{
+    font-size: $fontSize3;
+    line-height: 20px;
+
+}
+.download-link{
+    cursor: pointer;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: $primary3;
+}
+.skills-description{
+    padding-top: 10px;
+    .header{
+        font-size: 17px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+}
+.skills-header
+{
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+.skills
+{
+    padding-top: 10px;
+    padding-left: 20px;
+    i{
+        color: $primary2;
+        font-size: 50px;
+    }
+}
+.experience
+{
+    padding-right: 40px;
+    .experience-header
+{
+   
+    text-align: left;
+    font-size: 17px;
+}
+.experience-description
+{
+    font-size: $fontSize3;
+}
+}
+
+.section-content
+{
+    padding:30px 10px;
+    margin-top: 10px;
+    border-top: 1px solid gray;
+}
+@media (max-width:961px) 
+{
+    .experience{
+       padding: 0px;
+    }
+    .section-content
+{
+    padding:30px 0px;
+    margin-top: 10px;
+    border-top: 1px solid gray;
+}
+     
+}

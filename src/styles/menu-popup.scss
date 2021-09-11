@@ -1,0 +1,27 @@
+@import 'variables';
+.popup-overlay
+{
+    padding-top: 120px;
+    background-color: $secondaryColor1;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right:0;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+   
+    flex-direction: column;
+    left: 0;
+    .selected{
+        color: $primary1 !important;
+    }
+    .menu{
+        font-weight: bold;
+        border-bottom: 1px solid white;
+        padding: 10px;
+        color: white;
+        text-align: center;
+        min-width: 70%;
+    }
+}

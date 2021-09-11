@@ -1,0 +1,150 @@
+@import 'variables';
+ 
+body{
+    background-color:$background;
+    position: relative;
+    height: calc(100vh - #{$lowerPadding} - #{$upperPadding}-- #{$footerHeight});
+    padding-top: $upperPadding;
+    padding-bottom:$lowerPadding;
+    color: rgb(77, 77, 77);
+    font-family:  'Noticia Text', serif;
+}
+.main-section-header{
+    font-size: 80px;
+}
+.section-body
+{
+    margin-top: 60px !important;
+}
+ 
+.body-root
+{
+    min-height: 100%;
+}
+.body-content
+{
+    max-width: 900px;
+   
+    margin: 0px auto;
+    padding:20px 10px;
+}
+.section-menu div
+{
+    transform: translateY(-10px);
+}
+.section-footer
+{
+    
+    background-color: $primary1;
+    height: $footerHeight;
+}
+.header-text
+{
+    font-size: 43px;
+    color: $secondaryColor1;
+}
+.header-subtext
+{
+    font-size: $fontSize1;
+    color: $secondaryColor1;
+}
+.content-text
+{
+    font-family:"open sans" ;
+}
+
+
+.row
+{
+    margin: 0px;
+}
+.nav-menu
+{
+    display: flex;
+    div
+    {
+        padding: 10px;
+        cursor: pointer;
+        text-transform: uppercase;
+        font-size: $fontSize2;
+        font-weight: bold;
+        &.selected-nav a
+    {
+        color: $primary2 !important;
+    }
+         
+        
+    } 
+    
+    a{
+        color: $secondaryColor ;
+        text-decoration: none;
+    }
+    // a{
+    //     color: $secondaryColor !important;
+    // }
+   
+    a:hover,a:active
+    {
+        color:$primary2 !important;
+        text-decoration: none;
+    }
+     
+    
+}
+.section-footer
+{
+    margin-left: none !important;
+    margin-right: none !important;
+    .footer-row{
+        color: white;
+        font-size: 13px;
+        .info-footer{
+            &>i{
+                color: white;
+                margin-right: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $primary2;
+                font-size: 23px;
+                padding:12px;
+                border-radius: 50%;
+            }
+            padding:10px 35px;
+            background-color: $primary1;
+            display: flex;
+            align-items: center;
+            .header{
+
+            }
+            .content{
+                font-size: 14px;
+            }
+        }
+        margin: 0px auto;
+      
+    }
+}
+.follow{
+    cursor: pointer;
+}
+
+@media (max-width:961px) 
+{
+    .header-text
+{
+    font-size: 38px;
+    
+}
+    .body-content{
+        max-width: none;
+    }
+    .main-section-header{
+        font-size: 43px;
+    }
+    .section-body
+{
+    margin-top: 30px !important;
+}
+}
