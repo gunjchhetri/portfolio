@@ -104,6 +104,9 @@ function App() {
             <Route path="/projects" exact>
               <Projects />
             </Route>
+            <Route path="/portfolio" exact>
+              <Home />
+            </Route>
             <Route path="/" exact>
               <Home />
             </Route>
