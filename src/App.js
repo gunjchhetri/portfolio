@@ -95,16 +95,16 @@ function App() {
         <div class='row section-body'>
 
           <Switch>
-            <Route path="/contact">
+            <Route path="/contact" exact>
               <Contacts />
             </Route>
-            <Route path="/skills">
+            <Route path="/skills" exact>
               <Skills />
             </Route>
-            <Route path="/projects">
+            <Route path="/projects" exact>
               <Projects />
             </Route>
-            <Route path="/">
+            <Route path="/" exact>
               <Home />
             </Route>
           </Switch>
